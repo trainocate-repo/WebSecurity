@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>XXE</title></head>
+	<body>
+		<a href="phpinfo.php">phpinfoを開く</a>
+		<h3>XXE 外部実体参照（脆弱性あり）</h3>
+		XMLファイルを指定してください<br>
+		<form action="xxe_weak.php" method="post" enctype="multipart/form-data">
+			<input type="file" name="user" />
+			<input type="submit"/>
+		</form>
+		<h3>XXE 外部実体参照（脆弱性対応済み）</h3>
+		XMLファイルを指定してください<br>
+		<form action="xxe_safe.php" method="post" enctype="multipart/form-data">
+			<input type="file" name="user" />
+			<input type="submit"/>
+		</form>
+		<h3>XXE DoS攻撃</h3>
+		XMLファイルを指定してください<br>
+		<form action="xxe_dos.php" method="post" enctype="multipart/form-data">
+		    <input type="file" name="dos" value="xxe_dos.xml" />
+			<input type="submit"/>
+		</form>
+	</body>
+</html>
+

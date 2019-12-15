@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE foo [
+<!ENTITY hosts SYSTEM "file:/important">
+]>
+<user>
+  <name>対策次郎</name>
+  <address>&hosts;</address>
+</user>
