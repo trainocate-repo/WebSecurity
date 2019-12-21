@@ -1,5 +1,5 @@
 <?php
-require_once('./config/db_config.php');
+require_once('./websecurity/config/config.php');
 header('Content-Type: text/html; charset=UTF-8');
 
 $db = new PDO(DSN, DB_USER, DB_PASSWORD, $opt);
