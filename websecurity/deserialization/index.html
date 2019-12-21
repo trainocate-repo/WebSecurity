@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>安全ではないデシリアライゼーション</title></head>
+	<body>
+		<h3>シリアライズ、デシリアライズ　基本</h3>
+		<p>(1)固定の文字列とオブジェクトをシリアライズする</p>
+		<form action="serialize_basic.php" method="post">
+			<input type="submit" value="シリアライズ"/>
+		</form>
+		<p>(2)シリアライズされた文字列をデシリアライズする</p>
+		<form action="deserialize_basic.php" method="post">
+			<input type="text" name="testString" />
+			<input type="submit" value="デシリアライズ"/>
+		</form>
+		<h3>シリアライズ、デシリアライズ　応用</h3>
+		<p>(1)悪意のあるCookieをセット
+		<form action="setCookie.php" method="post">
+			<input type="submit" value="cookieをセット"/>
+		</form>
+		<p>(2)悪意のあるCookieをゲット
+		<form action="getCookie.php" method="post">
+			<input type="submit" value="cookieをゲット"/>
+		</form>
+	</body>
+</html>
+
