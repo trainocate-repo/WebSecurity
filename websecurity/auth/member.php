@@ -1,13 +1,13 @@
 <?php
 
-require_once('../config/db_config.php');
+require_once('../config/config.php');
 require_once('./helpers/db_helper.php');
 require_once('./helpers/extra_helper.php');
 
 session_start();
 
 if (empty($_SESSION['member'])) {
-    header('Location: '.SITE_URL.'login.php');
+    header('Location: '.SITE_URL.'auth/login.php');
     exit;
 }
 

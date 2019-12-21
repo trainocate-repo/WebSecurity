@@ -1,13 +1,13 @@
 <?php
 
-require_once('../config/db_config.php');
+require_once('../config/config.php');
 require_once('./helpers/db_helper.php');
 require_once('./helpers/extra_helper.php');
 
 session_start();
 //すでにログイン済みだったらmember.phpへリダイレクト
 if (!empty($_SESSION['member'])) {
-    header('Location: '.SITE_URL.'/member.php');
+    header('Location: '.SITE_URL.'auth/member.php');
     exit;
 }
 
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($errs)) {
         session_regenerate_id(true);
         $_SESSION['member'] = $member;
-        header('Location: '.SITE_URL.'member.php');
+        header('Location: '.SITE_URL.'auth/member.php');
         exit;
     }
 

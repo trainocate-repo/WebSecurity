@@ -1,6 +1,6 @@
 <?php
 
-require_once('../config/db_config.php');
+require_once('../config/config.php');
 
 session_start();
 
@@ -13,4 +13,4 @@ if (isset($_COOKIE[$session_name]) === TRUE) {
 
 session_destroy();
 
-header('Location: '.SITE_URL.'login.php');
+header('Location: '.SITE_URL.'auth/login.php');

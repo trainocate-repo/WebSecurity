@@ -1,6 +1,6 @@
 <?php
 
-require_once('../config/db_config.php');
+require_once('../config/config.php');
 require_once('./helpers/db_helper.php');
 require_once('./helpers/extra_helper.php');
 
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //エラーが無ければデータを挿入
     if (empty($errs)) {
         if(insert_member_data($dbh, $name, $email, $password)){
-        header('Location: '.SITE_URL.'login.php');
+        header('Location: '.SITE_URL.'auth/login.php');
         exit;
         }
         $errs['password'] = '登録に失敗しました。';

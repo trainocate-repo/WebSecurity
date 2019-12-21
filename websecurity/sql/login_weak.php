@@ -1,6 +1,6 @@
 <?php
 
-require_once('../config/db_config.php');
+require_once('../config/config.php');
 session_start();
 header('Content-Type: text/html; charset=UTF-8');
 $email = @$_POST['email'];  

@@ -1,5 +1,5 @@
 <?php
-require_once('../config/db_config.php');
+require_once('../config/config.php');
 header('Content-Type: text/html; charset=UTF-8');
 
 //パラメータの値を取得
